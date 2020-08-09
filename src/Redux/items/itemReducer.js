@@ -4,11 +4,18 @@ const initState = {
 
 const itemReducer = (state = initState, action) => {
     switch (action.type) {
-        case 'DERCREASE_ITEM': return {
-            ...state,
-            numOfItem: state.numOfItem - 1
-        }
-        default: return state
+        case 'DERCREASE_ITEM':
+            return {
+                ...state,
+                numOfItem: state.numOfItem - 1
+            }
+        case 'INCREASE_ITEM':
+            return {
+                ...state,
+                numOfItem: state.numOfItem + 1
+            }
+        default:
+            return state
     }
 
 }

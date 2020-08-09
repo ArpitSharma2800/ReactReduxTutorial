@@ -3,3 +3,8 @@ export const decrease = () => {
         type: 'DERCREASE_ITEM'
     }
 }
+export const increase = () => {
+    return {
+        type: 'INCREASE_ITEM'
+    }
+}
